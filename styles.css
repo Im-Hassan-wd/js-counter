@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+body{
+  background: hsl(222, 26%, 31%);
+  background: url(counter_bg.jpeg)
+}
+div{
+  padding: 20px 0;
+}
+.container{
+  padding: 20px;
+  max-width: 300px;
+  margin: 10% auto;
+  text-align: center;
+  border: 3px solid hsl(224, 36%, 15%);
+  border: 3px solid #FFF;
+  transition: 0.5s all ease-in-out;
+}
+.max,
+.min{
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  background: hsl(224, 36%, 15%);
+  width: 300px;
+  color: #FFF;
+  padding: 7px;
+  transition: all 0.3 ease-in-out
+}
+.min{
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.max{
+  transform: translateY(-20px);
+  opacity: 0
+}
+.counter{
+  font-size: 7rem;
+}
+h1{
+  color: hsl(6, 63%, 50%);
+  color: #FFF;
+}
+button{
+  width: 200px;
+  padding: 10px;
+  border: 3px solid hsl(224, 36%, 15%);
+  border-radius: 7px;
+  cursor: pointer;
+  background: hsl(224, 36%, 15%);
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 8px hsl(224, 36%, 15%);
+}
+/* button:nth-child(1){
+  background: hsl(6, 70%, 34%);
+  border: 3px solid hsl(6, 70%, 34%);
+}
+button:nth-child(1):focus{
+  border: 3px solid hsl(6, 63%, 50%);
+} */
+button:focus{
+ border: 3px solid hsl(223, 31%, 20%);
+}
