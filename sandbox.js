@@ -5,7 +5,7 @@ const count = document.querySelector('.counter');
 let counter = '';
 
 lowerBtn.addEventListener('click' , () => {
-  if(counter > 0 && counter < 50){
+  if(counter > 0 && counter <= 50){
     counter--
     count.textContent = counter
   }
